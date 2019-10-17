@@ -2,6 +2,23 @@
 # yarn lockfile v1
 
 
+"@types/ramda@^0.26.33":
+  version "0.26.33"
+  resolved "https://registry.npm.taobao.org/@types/ramda/download/@types/ramda-0.26.33.tgz#5fd1f22381ccf913a3627beb16f468fb57f82d94"
+  integrity sha1-X9HyI4HM+ROjYnvrFvRo+1f4LZQ=
+  dependencies:
+    ts-toolbelt "^4.7.7"
+
+ramda@^0.26.1:
+  version "0.26.1"
+  resolved "https://registry.npm.taobao.org/ramda/download/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
+  integrity sha1-jUE1HrgRHFU1Nhf8O7/62OTTXQY=
+
+ts-toolbelt@^4.7.7:
+  version "4.8.16"
+  resolved "https://registry.npm.taobao.org/ts-toolbelt/download/ts-toolbelt-4.8.16.tgz#790c043b37335f174e681195b0a3f332d68e437f"
+  integrity sha1-eQwEOzczXxdOaBGVsKPzMtaOQ38=
+
 typescript@^3.6.4:
   version "3.6.4"
   resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.6.4.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.6.4.tgz#b18752bb3792bc1a0281335f7f6ebf1bbfc5b91d"
