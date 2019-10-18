@@ -3,7 +3,7 @@ interface IDB<T> {
   add(info: T): T;
   update(info: T, id: number): T;
   delete(id: number): boolean;
-  get(id: number): boolean;
+  get(id: number): any [];
 }
 
 // 实现泛型接口，那么类也应该是一个泛型类
@@ -21,18 +21,12 @@ class Mongodb<T> implements IDB<T> {
   delete(id: number): boolean {
     throw new Error("Method not implemented.");
   }
-  get(id: number): boolean {
-    throw new Error("Method not implemented.");
+  get(id: number): any[] {
+    const list = [
+      { name: 'gdz', password: '123qwe' }
+    ]
+    return list
   }
 }
 
-class User {
-  userName: string | undefined
-  password: string | undefined
-}
-
-const user = new User()
-user.userName = '张三'
-user.password = '1223'
-const mongodb = new Mongodb<User>()
-mongodb.add(user)
+export { Mongodb }
